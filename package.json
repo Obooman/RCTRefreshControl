@@ -1,25 +1,31 @@
 {
-  "name": "react-refresh-control",
+  "name": "react-native-drop-refresh",
   "description": "A pull down to refresh control for react native.",
-  "version": "2.0.5",
+  "version": "2.0.8",
   "keywords": [
     "react-component",
     "react-native",
     "ios",
     "refresh",
-    "control"
+    "control",
+    "pull",
+    "drop"
   ],
   "license": "MIT",
   "main": "RCTRefreshControl.ios.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Shuangzuan/RCTRefreshControl.git"
+    "url": "git+ssh://git@github.com/Obooman/RCTRefreshControl.git"
   },
   "author": "Shuangzuan",
   "maintainers": [
-    {
-      "name": "Shuangzuan",
-      "email": "shuangzuan.he@icloud.com"
-    }
-  ]
+    "ObooChin <cheng.12@live.cn>"
+  ],
+  "bugs": {
+    "url": "https://github.com/Obooman/RCTRefreshControl/issues"
+  },
+  "homepage": "https://github.com/Obooman/RCTRefreshControl#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }

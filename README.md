@@ -1,6 +1,9 @@
 # RCTRefreshControl
 
 A pull down to refresh control for react native.
+This is a fork version from [Shuangzuan/RCTRefreshControl](https://github.com/Shuangzuan/RCTRefreshControl).
+
+Better npm maintainess
 
 ## Screen Shot
 
@@ -8,10 +11,10 @@ A pull down to refresh control for react native.
 
 ## Installation
 
-1. Run `npm install react-refresh-control --save` in your project directory.
+1. Run `npm install react-native-drop-refresh --save` in your project directory.
 2. Drag `RCTRefreshControl.xcodeproj` to your project on Xcode.
-3. Click on your main project file (the one that represents the .xcodeproj) select Build Phases and drag `libRCTRefreshControl.a` from the Products folder inside the `RCTRefreshControl.xcodeproj`.
-4. Add `var RCTRefreshControl = require('react-refresh-control');` to your code.
+3. Click on your main project file (the one that represents the .xcodeproj) select Build Phases,click the `+` button at left-bottom cornor and add `libRCTRefreshControl.a` under `Workspace`.
+4. Add `var RCTRefreshControl = require('react-native-drop-refresh');` to your code.
 
 ## Usage
 
@@ -20,7 +23,7 @@ A pull down to refresh control for react native.
 
 var React = require('react-native');
 var TimerMixin = require('react-timer-mixin');
-var RCTRefreshControl = require('react-refresh-control');
+var RCTRefreshControl = require('react-native-drop-refresh');
 var {
   AppRegistry,
   ListView,
