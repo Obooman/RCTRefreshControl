@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0BCE712030F8A42B334E9CFA6081352FDFF54C76",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0BCE712030F8A42B334E9CFA6081352FDFF54C76" : 0,
+    "C18D10292567FB7B676BADDDA11BE939E2AEEC91" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "45E2E111-2734-4F50-AE54-0F5C7A05CE2B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0BCE712030F8A42B334E9CFA6081352FDFF54C76" : "RCTRefreshControl\/",
+    "C18D10292567FB7B676BADDDA11BE939E2AEEC91" : "RCTRefreshControl\/ODRefreshControl\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DropRefreshControl",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DropRefreshControl.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Obooman\/RCTRefreshControl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0BCE712030F8A42B334E9CFA6081352FDFF54C76"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Sephiroth87\/ODRefreshControl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C18D10292567FB7B676BADDDA11BE939E2AEEC91"
+    }
+  ]
+}

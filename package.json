@@ -1,7 +1,7 @@
 {
   "name": "react-native-drop-refresh",
   "description": "A pull down to refresh control for react native.",
-  "version": "2.0.8",
+  "version": "2.1.0",
   "keywords": [
     "react-component",
     "react-native",
@@ -12,7 +12,7 @@
     "drop"
   ],
   "license": "MIT",
-  "main": "RCTRefreshControl.ios.js",
+  "main": "DropRefreshControl.ios.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Obooman/RCTRefreshControl.git"

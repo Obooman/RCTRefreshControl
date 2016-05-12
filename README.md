@@ -1,9 +1,13 @@
-# RCTRefreshControl
+# react-native-drop-refresh
+
 
 A pull down to refresh control for react native.
 This is a fork version from [Shuangzuan/RCTRefreshControl](https://github.com/Shuangzuan/RCTRefreshControl).
 
 Better npm maintainess
+
+####Update 2.1.0 
+Support react-native 0.20.0, solve module name collsion issue.
 
 ## Screen Shot
 
@@ -12,9 +16,9 @@ Better npm maintainess
 ## Installation
 
 1. Run `npm install react-native-drop-refresh --save` in your project directory.
-2. Drag `RCTRefreshControl.xcodeproj` to your project on Xcode.
-3. Click on your main project file (the one that represents the .xcodeproj) select Build Phases,click the `+` button at left-bottom cornor and add `libRCTRefreshControl.a` under `Workspace`.
-4. Add `var RCTRefreshControl = require('react-native-drop-refresh');` to your code.
+2. Drag `DropRefreshControl.xcodeproj` to your project on Xcode.
+3. Click on your main project file (the one that represents the .xcodeproj) select Build Phases,click the `+` button at left-bottom cornor and add `libDropRefreshControl.a` under `Workspace`.
+4. Add `var DropRefreshControl = require('react-native-drop-refresh');` to your code.
 
 ## Usage
 
@@ -23,7 +27,7 @@ Better npm maintainess
 
 var React = require('react-native');
 var TimerMixin = require('react-timer-mixin');
-var RCTRefreshControl = require('react-native-drop-refresh');
+var DropRefreshControl = require('react-native-drop-refresh');
 var {
   AppRegistry,
   ListView,
@@ -46,22 +50,22 @@ var RCTRefreshControlDemo = React.createClass({
   },
   componentDidMount: function() {
     // ScrollView
-    RCTRefreshControl.configure({
+    DropRefreshControl.configure({
       node: this.refs[SCROLLVIEW],
       tintColor: '#05A5D1',
       activityIndicatorViewColor: '#05A5D1'
     }, () => {
       this.setTimeout(() => {
-        RCTRefreshControl.endRefreshing(this.refs[SCROLLVIEW]);
+        DropRefreshControl.endRefreshing(this.refs[SCROLLVIEW]);
       }, 2000);
     });
 
     // ListView
-    RCTRefreshControl.configure({
+    DropRefreshControl.configure({
       node: this.refs[LISTVIEW]
     }, () => {
       this.setTimeout(() => {
-        RCTRefreshControl.endRefreshing(this.refs[LISTVIEW]);
+        DropRefreshControl.endRefreshing(this.refs[LISTVIEW]);
       }, 2000);
     });
   },
@@ -97,7 +101,7 @@ var styles = StyleSheet.create({
   }
 });
 
-AppRegistry.registerComponent('RCTRefreshControlDemo', () => RCTRefreshControlDemo);
+AppRegistry.registerComponent('DropRefreshControlDemo', () => DropRefreshControlDemo);
 ```
 
 ---
