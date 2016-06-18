@@ -4,7 +4,7 @@
 A pull down to refresh control for react native.
 This is a fork version from [Shuangzuan/RCTRefreshControl](https://github.com/Shuangzuan/RCTRefreshControl).
 
-Better npm maintainess
+Better npm maintainess,issues are welcomed.
 
 ####Update 2.1.0 
 Support react-native 0.20.0, solve module name collsion issue.
