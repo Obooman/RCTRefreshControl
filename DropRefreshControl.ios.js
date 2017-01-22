@@ -2,16 +2,15 @@
  * @providesModule RCTRefreshControl
  * @flow
  */
-'use strict';
 
-var React = require('react-native');
-var {
+import React from 'react';
+import {
   DeviceEventEmitter,
   NativeModules: {
     DropRefreshControl,
   },
   processColor
-} = React;
+} from 'react-native';
 
 /**
  * A pull down to refresh control like the one in Apple's iOS6 Mail App.
@@ -47,4 +46,4 @@ var RCTRefreshControl = {
   }
 };
 
-module.exports = RCTRefreshControl;
+export default RCTRefreshControl;

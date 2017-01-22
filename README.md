@@ -1,10 +1,12 @@
 # react-native-drop-refresh
 
-
 A pull down to refresh control for react native.
 This is a fork version from [Shuangzuan/RCTRefreshControl](https://github.com/Shuangzuan/RCTRefreshControl).
 
 Better npm maintainess,issues are welcomed.
+
+####Update 2.2.0 
+Support react-native 0.40.0, change CMD to ES6 syntax.
 
 ####Update 2.1.0 
 Support react-native 0.20.0, solve module name collsion issue.
@@ -16,46 +18,43 @@ Support react-native 0.20.0, solve module name collsion issue.
 ## Installation
 
 1. Run `npm install react-native-drop-refresh --save` in your project directory.
-2. Drag `DropRefreshControl.xcodeproj` to your project on Xcode.
-3. Click on your main project file (the one that represents the .xcodeproj) select Build Phases,click the `+` button at left-bottom cornor and add `libDropRefreshControl.a` under `Workspace`.
-4. Add `var DropRefreshControl = require('react-native-drop-refresh');` to your code.
+2. Run `react-native link` to link the lib up.
+3. Add `import DropRefreshControl from 'react-native-drop-refresh';` to your code.
 
 ## Usage
 
 ```javascript
-'use strict';
+import React, { Component } from 'react';
+import DropRefreshControl from 'react-native-drop-refresh';
 
-var React = require('react-native');
-var TimerMixin = require('react-timer-mixin');
-var DropRefreshControl = require('react-native-drop-refresh');
-var {
+import {
   AppRegistry,
   ListView,
   ScrollView,
   StyleSheet,
   Text,
   View
-} = React;
+} from 'react-native';
 
 var SCROLLVIEW = 'ScrollView';
 var LISTVIEW = 'ListView';
 
-var RCTRefreshControlDemo = React.createClass({
-  mixins: [TimerMixin],
-  getInitialState: function() {
+class RCTRefreshControlDemo extends Component{
+  constructor(){
     var ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-    return {
+    this.state = {
       dataSource: ds.cloneWithRows(['#484848', '#2F9C0A', '#05A5D1']),
-    };
-  },
-  componentDidMount: function() {
+    }
+  }
+
+  componentDidMount() {
     // ScrollView
     DropRefreshControl.configure({
       node: this.refs[SCROLLVIEW],
       tintColor: '#05A5D1',
       activityIndicatorViewColor: '#05A5D1'
     }, () => {
-      this.setTimeout(() => {
+      setTimeout(() => {
         DropRefreshControl.endRefreshing(this.refs[SCROLLVIEW]);
       }, 2000);
     });
@@ -64,12 +63,13 @@ var RCTRefreshControlDemo = React.createClass({
     DropRefreshControl.configure({
       node: this.refs[LISTVIEW]
     }, () => {
-      this.setTimeout(() => {
+      setTimeout(() => {
         DropRefreshControl.endRefreshing(this.refs[LISTVIEW]);
       }, 2000);
     });
-  },
-  render: function() {
+  }
+
+  render() {
     return (
       <View style={styles.container}>
         <ScrollView ref={SCROLLVIEW} style={styles.scrollView}>
@@ -92,7 +92,7 @@ var RCTRefreshControlDemo = React.createClass({
       </View>
     );
   }
-});
+};
 
 var styles = StyleSheet.create({
   container: {
@@ -102,6 +102,7 @@ var styles = StyleSheet.create({
 });
 
 AppRegistry.registerComponent('DropRefreshControlDemo', () => DropRefreshControlDemo);
+// use `export default DropRefreshControlDemo` instead to use this as an component;
 ```
 
 ---

@@ -14,4 +14,4 @@ var RCTRefreshControl = {
   }
 };
 
-module.exports = RCTRefreshControl;
+export default RCTRefreshControl;
