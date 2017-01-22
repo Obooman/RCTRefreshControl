@@ -1,7 +1,7 @@
 {
   "name": "react-native-drop-refresh",
   "description": "A pull down to refresh control for react native.",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "keywords": [
     "react-component",
     "react-native",
