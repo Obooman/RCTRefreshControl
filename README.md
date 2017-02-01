@@ -5,6 +5,9 @@ This is a fork version from [Shuangzuan/RCTRefreshControl](https://github.com/Sh
 
 Better npm maintainess,issues are welcomed.
 
+[![NPM](https://nodei.co/npm/react-native-drop-refresh.png)](https://nodei.co/npm/react-native-drop-refresh/)
+[![NPM](https://nodei.co/npm-dl/react-native-drop-refresh.png?months=9)](https://nodei.co/npm/react-native-drop-refresh/)
+
 ####Update 2.2.0 
 Support react-native 0.40.0, change CMD to ES6 syntax.
 
