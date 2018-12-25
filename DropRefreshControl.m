@@ -2,11 +2,11 @@
 
 #import "ODRefreshControl.h"
 
-#import "RCTBridge.h"
-#import "RCTConvert.h"
-#import "RCTScrollView.h"
-#import "RCTUIManager.h"
-#import "RCTEventDispatcher.h"
+#import <React/RCTBridge.h>
+#import <React/RCTConvert.h>
+#import <React/RCTScrollView.h>
+#import <React/RCTUIManager.h>
+#import <React/RCTEventDispatcher.h>
 
 @implementation DropRefreshControl
 
